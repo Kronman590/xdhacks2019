@@ -6,6 +6,7 @@
 
 from tkinter import *
 from backend.GoalsList import *
+import json
 
 def show_entry_fields(event=None):
 
@@ -31,5 +32,5 @@ i = 1
 e.bind('<Return>', show_entry_fields)
 
 mainloop()
-
-print(getGoals(g))
+with open('goals.txt', 'w') as json_goals:
+    json.dump(getGoals(g),json_goals)
