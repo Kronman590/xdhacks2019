@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version = "2.0">
+    <channel>
+        <title>groupFeed</title>
+        <link>https://www.nimh.nih.gov/index.shtml</link>
+        <description>channel for mental health</description>
+        <image>
+            <url>https://www.nimh.nih.gov/images/nimh_logo_144835_3.gif</url>
+            <link>https://www.nimh.nih.gov/index.shtml</link>
+        </image>
+        <item>
+            <title>NIH</title>
+            <link>https://www.nimh.nih.gov/site-info/index-rss.atom?format=xml</link>
+            <description>NIH newsfeed</description>
+        </item>
+    </channel>
+</rss>
