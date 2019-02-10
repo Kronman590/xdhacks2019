@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<h2>Login</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+</form>
+	<!--<div>-->
+		<!--<form action="/Mental health app/auth_newuser handling.py" method ="post">-->
+			<!--<label for="username">Username: </label>-->
+			<!--<input id="username" type="text" name ="username" value="{{current_name}}">-->
+			<!--<label for="password">Password: </label>-->
+			<!--<input type="passw" type="password" name="passw" value ="{{current_passw}}">-->
+			<!--<input type="submit" value="OK">-->
+
+		<!--</form>-->
+	<!--</div>-->
+
+	<!--<div>-->
+	<!--<h2> Registration</h2>-->
+	<!--<form action="/Mental health app/auth_newuserhandling.py">-->
+		<!--<p>Username: <input type="text" name="new_username"></p>-->
+		<!--<p>Password: <input type="password" name= "new_pass"></p>-->
+		<!--<p>Confirm Password: <input type="password" name="new_passcon"></p>-->
+		<!--<p>Zip code: <input type="text" name = "zip"></p>-->
+		<!--<p><button type="submit">Submit</button></p>-->
+	<!--</form>-->
+<!--</div>-->
+
+</body>
+</html>
