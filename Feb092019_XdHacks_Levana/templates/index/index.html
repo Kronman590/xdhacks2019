@@ -60,10 +60,19 @@ function createTable()
         goalSet[key] = 1;
     }
 }
+export function giveDones() {
+    done = goalSet.values();
+    for (i=0;i<done.length();i++){
+        if done[i] == 0 {
+            return false;
+        }
+    return true;
+    }
+}
 </script>
   </head>
   <body>
-    <h1>Goals for today</h1>
+    <h4>Goals for today</h4>
       <form onsubmit="return false">
       <input type="text" name="Goal" id="Goal"/>
       <input name="generate" type="submit" value="Set Goal" onclick='createTable();'/>
