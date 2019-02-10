@@ -1,7 +1,11 @@
 class Goals:
 
-    def __init__(self):
-        self.goalList = []
+    def __init__(self, title):
+        self.goalTitle = title
+        self.goalDone = False
 
-def getGoals(g):
-    return g.goalList
+    def getGoal(self):
+        return self.goalTitle
+
+    def getFinished(self):
+        return self.goalDone
