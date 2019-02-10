@@ -21,8 +21,57 @@
 
 <!--Tab Content-->
 <div id="You" class="tabcontent">
-    <h3>You</h3>
-    <p>This is where your profile should be</p>
+    <h3>Your Goals</h3>
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        var goalSet = {};
+function createTable()
+{
+    key = document.getElementById('Goal').value;
+    goalSet[key] = 0;
+    var table = document.getElementById("goalTable");
+    var theader = '<table id="goalTable" style="font-size: 20px" border="1">\n';
+    var tbody = '<tr><th>'+key+'</th></tr>\n';
+    var tfooter = '</table>';
+    if (table == null) {
+      document.getElementById('wrapper').innerHTML = theader + tbody + tfooter;
+      }
+    else {
+      var height = table.rows.length
+      var row = table.insertRow(height)
+      var cell = row.insertCell(0)
+      cell.innerHTML = key
+    }
+    var table = document.getElementById("goalTable");
+    document.getElementById('Goal').value = "";
+        for (var i = 0; i < table.rows.length; i++) {
+            for (var j = 0; j < table.rows[i].cells.length; j++)
+            table.rows[i].cells[j].onclick = function () {
+                tableFn(this,key);
+            };
+        }
+
+    function tableFn(tableCell,key) {
+        tableCell.style.backgroundColor ="green";
+        goalSet[key] = 1;
+    }
+}
+</script>
+  </head>
+  <body>
+    <h1>Goals for today</h1>
+      <form onsubmit="return false">
+      <input type="text" name="Goal" id="Goal"/>
+      <input name="generate" type="submit" value="Set Goal" onclick='createTable();'/>
+        </form>
+      <div id="wrapper"></div>
+
+  </body>
+</html>
 </div>
 
 <div id="Calender" class="tabcontent">
@@ -124,9 +173,7 @@
 
 <div id="Groups" class="tabcontent">
     <h3>Groups</h3>
-    <h2>Groups</h2>
     <body>
-        <p>This is where your groups should be</p>
     <script type="text/javascript" src="http://output46.rssinclude.com/output?type=js&amp;id=1207726&amp;hash=93d397ce99d4b7e54d6f6f31ee012895"></script>
         <h3>Goal Update</h3>
         <form action="/handle-user-post">
