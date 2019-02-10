@@ -31,10 +31,16 @@
 </div>
 
 <div id="Groups" class="tabcontent">
-    <h3>Groups</h3>
+    <h2>Groups</h2>
     <body>
-        <p>This is where your groups should be</p>
-    <script type="text/javascript" src="http://output46.rssinclude.com/output?type=js&amp;id=1207726&amp;hash=93d397ce99d4b7e54d6f6f31ee012895"></script>
+        <h3>Goal Update</h3>
+        <form action="/handle-user-post">
+            <textarea name="updatePost" style="width: 55%; height:200px;"></textarea>
+            <br>
+            <input type="button" onclick="postToGroups(event, 'msg')" value="post">
+        </form>
+        <br>
+        <script type="text/javascript" src="http://output46.rssinclude.com/output?type=js&amp;id=1207726&amp;hash=93d397ce99d4b7e54d6f6f31ee012895"></script>
     </body>
 </div>
 </body>
