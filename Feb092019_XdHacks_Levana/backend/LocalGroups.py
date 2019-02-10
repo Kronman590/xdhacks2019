@@ -1,6 +1,8 @@
 from django.db import models
 from datetime import datetime
 
+# a class and related functions for groups
+
 MAX_POST_LENGTH = 300
 MAX_NAME_LENGTH = 30
 POST_TYPES = (
@@ -9,6 +11,7 @@ POST_TYPES = (
         ("ch", "Challenge"),
         ("ir", "Information Resources")
     )
+
 
 class GroupPost(models.Model):
 
