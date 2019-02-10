@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<!--Tab links-->
+<div class="tab">
+    <button class = "tablinks" onclick="openTab(event, 'You')" id="defaultOpen">You</button>
+    <button class = "tablinks" onclick="openTab(event, 'Goals')">Goals</button>
+    <button class = "tablinks" onclick="openTab(event, 'Calender')">Calendar</button>
+    <button class = "tablinks" onclick="openTab(event, 'Groups')">Groups</button>
+
+    <script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+</div>
+
+<!--Tab Content-->
+<div id="You" class="tabcontent">
+    <h3>You</h3>
+    <p>This is where your profile should be</p>
+</div>
+
+<div id="Goals" class="tabcontent">
+    <h3>Goals</h3>
+    <p>This is where your Goals should be</p>
+</div>
+
+<div id="Calendar" class="tabcontent">
+    <h3>Calendar</h3>
+    <p>This is where your Calendar should be</p>
+</div>
+
+<div id="Groups" class="tabcontent">
+    <h3>Groups</h3>
+    <p>This is where your groups should be</p>
+</div>
+</body>
+</html>
