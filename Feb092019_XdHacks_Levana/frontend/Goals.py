@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[93]:
 
 
 from tkinter import *
 
-e_var = [];
+e_var = []
 
 def show_entry_fields(event=None):
     global i
@@ -27,21 +28,6 @@ i = 1
 e.bind('<Return>', show_entry_fields)
 
 mainloop( )
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
