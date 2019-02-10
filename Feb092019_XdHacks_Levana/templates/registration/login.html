@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
     <meta charset="utf-8">
     <title></title>
   </head>
@@ -9,7 +8,7 @@
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Login</button>
+        <button type="submit"> <a href="templates\goals.html">Login</a></button>
     </form>
   </body>
 </html>
@@ -26,3 +25,5 @@
 <!--templates/registration/login/html-->
 <!-- <h2>Login</h2>
 
+  </body>
+</html>
