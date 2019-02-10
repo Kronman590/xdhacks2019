@@ -5,11 +5,7 @@
 
 
 from tkinter import *
-
-class Goals:
-
-    def __init__(self):
-        self.goalList = []
+from backend.GoalsList import *
 
 def show_entry_fields(event=None):
 
@@ -35,3 +31,5 @@ i = 1
 e.bind('<Return>', show_entry_fields)
 
 mainloop()
+
+print(getGoals(g))
